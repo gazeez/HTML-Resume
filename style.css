@@ -22,7 +22,9 @@ html {
   .jobs{
     display:block;  
   }
-  
+  .Educations{
+    display:block;  
+  }
   
   /* img {
     max-width: 100%;
@@ -149,12 +151,28 @@ html {
     margin-bottom: 24px;
     border-bottom: 1px solid lightgrey;
   }
+  .Education {
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+    border-bottom: 1px solid lightgrey;
+  }
   
   .job:last-child {
     border-bottom: none;
   }
   
   .job-title-container {
+    /* display: flex; */
+    /* justify-content: space-between; */
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+
+  .Education:last-child {
+    border-bottom: none;
+  }
+  
+  .Education-title-container {
     /* display: flex; */
     /* justify-content: space-between; */
     margin-bottom: 20px;
@@ -182,6 +200,24 @@ html {
   width:50%;
   text-align: right;
   display: inline;
+}
+
+.Education-title {
+  font-weight: bold;
+  line-height: 1.2;
+}
+.Education-company{
+  margin:0;
+  float: left;
+  width:50%;
+  display: inline;
+}
+.Education-date{
+margin:0;
+float: left;
+width:50%;
+text-align: right;
+display: inline;
 }
   .summary-container {
     display: flex;
