@@ -75,13 +75,17 @@ html {
   }
 .Dropdown a + ul
 {
-display: none;
+overflow: hidden;
+height: 0;
 position:absolute;
 }
 .Dropdown li:hover a + ul
+/* .Dropdown a:active + ul, 
+.Dropdown a:focus + ul */
 {
-display: block;
+height: auto;
 }
+
 
   
   
