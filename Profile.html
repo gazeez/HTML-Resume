@@ -9,18 +9,17 @@
 
     <title>Gafar's Resume</title>
     <link href="https://fonts.googleapis.com/css?family=Simonetta&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/99ef05d8e8.js" crossorigin="anonymous"></script>
+    <script defer src="https://kit.fontawesome.com/99ef05d8e8.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css"   href="reset.css">
     <link rel="stylesheet" type="text/css"   href="style.css">
 </head>
 
 <body>
-    <div class="container">
-        <header>
-            <div class="leftCol">
+    <header class="container">
+            <div>
                 <img src="img/gafar.jpg" alt="avatar" class="avatar">
             </div>
-            <div class="rightCol">
+            <div>
                 <h1 class="my-name"> Gafar Azeez</h1>
                 <h2 class="my-title"> Software Engineer and Database Analyst</h2>
                 <nav>
@@ -135,16 +134,39 @@
                         </svg>
                         <a href="tel:780-710-3580">780.710.3580</a>
                     </div>
-
-                    <a href="#">Home</a>
-                    <a href="Profile.html">Profile</a>
-                    <a href="Education.html"> Education</a>
-                    <a href="Summary.html">Summary</a>
-                    <a href="Experience.html">Experience</a>
-                    <a href="Other.html">Other</a>
+                    <ul class="Dropdown">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="Profile.html">Profile</a></li>
+                        <li><a href="Education.html"> Education</a></li>
+                        <li><a href="Summary.html">Summary</a></li>
+                        <li>
+                            <a href="Experience.html">Experience <i class="fas fa-caret-down"></i> </a>
+                            <ul>
+                                <li> <a href="Professional.html"> Professional</a></li>
+                                <li> <a href="Project.html"> Project</a> </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="Other.html">Other <i class="fas fa-caret-down"></i> </a>
+                            <ul>
+                                <li> <a href="Interest.html"> Interest</a></li>
+                                <li> <a href="Volunteer.html"> Volunteer</a> </li>
+                            </ul>
+                        </li>                   
+                     </ul>                  
                 </nav>
-                <br/>
             </div>
-        </header>
-    </div>
+    </header>
+
+    <main>
+        <h1 class="Page-Title"> Profile</h1>
+        <p>With 7+ years of applied experience in the areas of oil sands and refining environment, working on
+        optimizing processes, transportation, road construction, project management, detailed design
+        engineering (EPCM) and erosion control in the oil & gas industry. Working knowledge of relevant
+        codes, legislation, regulations, policies, and procedures (OH&S, Environmental, and Builders Lien
+        Act). I can work independently and in a team. Seeking the Project Management/ Engineer role, where I
+        can use my leadership, experience, and analytical skills to increase value whilst adhering to the
+        company’s mission, goals, and safety culture.</p>
+    </main>
 </body>
+
