@@ -15,6 +15,7 @@ html {
   .experience-flex{
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
   }
   .section-title{
     flex:1 250px;
@@ -68,19 +69,40 @@ html {
     background: white;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
+
+  /*HEADER SECTION*/
+
   header {
-    /* display: grid;
+    display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-gap: 20px; */
-    padding: 10px 0;
+    grid-gap: 10px;
+    padding: 0px 0;
     /* border-bottom: 1px solid lightgrey; */
   }
+.Dropdown a + ul
+{
+display: none;
+}
+.Dropdown li:hover a + ul
+{
+display: block;
+}
  .leftCol{
    width: 20%;
    float: left;
  }
+
+ h3{
+  text-align: justify;
+  text-justify: inter-word;
+   font-size:18px;
+   text-align: ;
+   justify-content: space-evenly
+   width: 70px;
+   white-space: nowrap
+ }
  .rightCol{
-   width: 80%;
+   width: 100%;
    float: left;
  }
   
@@ -100,7 +122,7 @@ html {
     float: left;
     font-weight: bold;
     font-size: 18px;
-    display: inline-block;
+    display: flex;
   }
   .section-content{
     float: left;
@@ -111,7 +133,7 @@ html {
   ***********************************/
   
 .avatar {
-    width: 130px;
+    width: 300px;
     float: left;
   }
   
@@ -152,8 +174,8 @@ html {
     border-bottom: 1px solid lightgrey;
   }
   .Education {
-    padding-bottom: 24px;
-    margin-bottom: 24px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
     border-bottom: 1px solid lightgrey;
   }
   
@@ -173,15 +195,20 @@ html {
   }
   
   .Education-title-container {
-    /* display: flex; */
-    /* justify-content: space-between; */
+    /* display: flex;  */
+    justify-content: space-between;
     margin-bottom: 20px;
     font-size: 18px;
   }
 
   ul{
+    font-size: large;
     margin-left: 20px;
     list-style-type: disc;
+  }
+
+  p {
+    font-size: large;
   }
   
   .job-title {
@@ -207,6 +234,7 @@ html {
   line-height: 1.2;
 }
 .Education-company{
+  /*use flexbox*/
   margin:0;
   float: left;
   width:50%;
@@ -222,13 +250,15 @@ display: inline;
   .summary-container {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px;
+    padding-bottom: 24px;
+    margin-bottom: 24px;
     font-size: 18px;
   }
 
   .summary-container ul {
-    margin-left: 20px;
+    margin-left: 0px;
     list-style-type: disc;
+    white-space: wrap;
   }
   /***********************************
   * =Skills
