@@ -31,7 +31,7 @@ html {
     text-decoration: underline;
   }
   
-  .container, main {
+  .container, main, .box, .Education, section {
     max-width: 980px;
     margin: 0px auto;
     padding: 32px;
@@ -41,6 +41,14 @@ html {
   }
 
   .container
+  {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    padding-top: 150px;
+
+  }
+
+  .box
   {
     display: grid;
     grid-template-columns: 30% 70%;
@@ -75,13 +83,17 @@ html {
   }
 .Dropdown a + ul
 {
-display: none;
+overflow: hidden;
+height: 0;
 position:absolute;
 }
 .Dropdown li:hover a + ul
+/* .Dropdown a:active + ul, 
+.Dropdown a:focus + ul */
 {
-display: block;
+height: auto;
 }
+
 
   
   
@@ -128,28 +140,146 @@ display: block;
     /* list-style-type: disc; */
   }
 
+  /*HOMEPAGE*/
+
+  .Home-Title
+  {
+    font-size: 48px;
+    line-height: 1;
+    text-align: center;
+  }
 /* Profile */
+
 .Page-Title {
   font-size: 48px;
   line-height: 1;
+  text-align: center;
 }
 
 main {
   display: grid;
-  grid-template-columns: 200px auto;
-  grid-template-rows: auto;
+  grid-template-columns: auto;
+  grid-template-rows: auto; 
+  justify-items: center;
 }
 
 p{
+  font-size: 20px;
   padding-top: 40px;
+  padding-bottom: 40px;
+  line-height: 2.5;
+  width: 80%;
+  }
+
+  .Summary
+{
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+ .Summary > li
+ {
+  margin-left: 70px;
+  width: 80%;
+  padding-bottom: 15px;
+  list-style-type: disc;
+ }
+
+ /* Education, Qualification, Certificates and Computing Skills*/
+
+ .Education {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  grid-template-rows: 10vh;
+  
+  font-family: inherit;
+  font-size: large;
 }
 
- 
+.left_bg,
+.right_bg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+.left_bg {
+  background-color: #3498db;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+.right_bg {
+  background-color: #ecf0f1;
+}
+/*certificates*/
+.certs > li 
+{
+margin-left: 70px;
+width: 80%;
+padding-bottom: 6px;
+list-style-type: disc;
+text-align: left;
+}
+
+.comp > li 
+{
+margin-left: 70px;
+width: 80%;
+padding-bottom: 6px;
+list-style-type: disc;
+text-align: left;
+}
+
+/* .Education img
+{
+  height: 10%;
+  margin: 10px;
+} */
+
+.Education
+{
+  display: inline-block;
+  width: 70%;
+  padding: 1px 0px;
+  margin: 15%;
+  text-align: center;
+  box-shadow: 0 0 30px 10px rgba(37, 73, 214, 0.18);
+  background: #fff;
+  position: relative;
+  top: 1px;
+}
+ 
+/*INTERESTS*/
+
+.icon-interest {
+  fill: currentColor;
+  display: inline-block;
+  font-size: inherit;
+  height: 5em;
+  overflow: visible;
+  text-align: center;
+ 
+}
+
+/* .interests-container {
+  display: flex;
+  margin: 0 10px 0 0;
+  justify-content: space-between;
+} */
+
+
+img 
+{
+  display: flex;
+  align-items: center;
+  opacity: 3;
+ 
+  
+}
   
   @media only screen and (max-width : 768px) 
   {
-    main, .container
+    main, .container, .box, .Education
     {
       grid-template-columns: 100%;
     }
