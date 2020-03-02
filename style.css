@@ -27,8 +27,15 @@ html {
     text-decoration: none;
   }
   
-  a:hover {
+  li a:hover 
+  {
     text-decoration: underline;
+  }
+
+  li a.active 
+  {
+    background-color: #b0b6d1;
+    color: black;
   }
   
   .container, main, .box, .Education, section {
@@ -64,14 +71,16 @@ html {
     left: 0;
     display: flex;
     justify-content: space-evenly;
+    background-color:#3498db;
   }
 
   .Dropdown > li 
   {
     display: inline-block;
     padding-top: 50px;
+    background-color: #3498db;
   }
-
+/*EXPERIENCE - PROFESSIONAL - PROJECT*/
   /*HEADER SECTION*/
 
   header {
@@ -86,6 +95,7 @@ html {
 overflow: hidden;
 height: 0;
 position:absolute;
+background-color: #3498db;
 }
 .Dropdown li:hover a + ul
 /* .Dropdown a:active + ul, 
@@ -94,8 +104,60 @@ position:absolute;
 height: auto;
 }
 
+h1, h2, h3, h4, h5
+{
+  font-weight: bolder;
+}
 
+h3, h4
+{
+  margin-left: 83px;
   
+}
+
+
+h3, h4, h5
+{
+  font-size: 18px;
+}
+
+.job-title-container{
+  display: grid;
+  grid-template-columns: 4fr 1.5fr;
+  grid-auto-rows: 75px;
+  grid-gap: 10px;
+  grid-template-rows: 20px 20px;
+  background-color: #3498db;
+  border: 1px solid #01070c;
+  padding: 10px;
+  
+}
+
+/* grid-container {
+  background-color: lightyellow;
+  border: 1px solid #bbb;
+  padding: 10px;
+} */
+
+grid-item 
+{
+  background-color: lightgreen;
+  border: 1px solid #ccc;
+}
+
+/*PROJECT HIGHLIGHTS*/
+
+strong
+{
+  font-weight: bolder;
+  text-decoration: underline;
+}
+
+.Project
+{
+  background-color: #3498db;
+  border: 10px solid #51a0d4;
+}
   
   
   /***********************************
@@ -109,13 +171,15 @@ height: auto;
   
   .my-name {
     font-size: 48px;
-    line-height: 1;
+    line-height: 1.5;
+    margin-left: 10px;
   }
   
   .my-title {
     font-size: 24px;
     font-weight: 300;
     color: #236FB2;
+    margin-left: 10px;
   }
   
   .links {
@@ -126,6 +190,7 @@ height: auto;
   .link-item {
     align-items: center;
     flex: 1;
+    margin-left: 10px;
   }
   
   .link-item svg {
@@ -133,7 +198,6 @@ height: auto;
   }
   
  
-
   ul{
     font-size: large;
     margin-left: 20px;
@@ -148,14 +212,23 @@ height: auto;
     line-height: 1;
     text-align: center;
   }
-/* Profile */
+
+  /* Profile */
 
 .Page-Title {
   font-size: 48px;
   line-height: 1;
   text-align: center;
+  padding-bottom: 10px;
 }
 
+.Interest-Title
+{
+  font-size: 48px;
+  line-height: 1;
+  text-align: center;
+  padding-bottom: 40PX;
+}
 main {
   display: grid;
   grid-template-columns: auto;
@@ -165,16 +238,21 @@ main {
 
 p{
   font-size: 20px;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   line-height: 2.5;
   width: 80%;
+  background-color: #3498db;
+  border: 10px solid #51a0d4;
+  text-indent: 40px;
   }
 
   .Summary
 {
   padding-top: 40px;
   padding-bottom: 40px;
+  /* background-color: #3498db;
+  border: 5px solid #3196da; */
 }
  .Summary > li
  {
@@ -182,7 +260,10 @@ p{
   width: 80%;
   padding-bottom: 15px;
   list-style-type: disc;
+  /* background-color: #3498db;
+  border: 5px solid #3196da; */
  }
+
 
  /* Education, Qualification, Certificates and Computing Skills*/
 
@@ -190,7 +271,6 @@ p{
   display: grid;
   grid-template-columns: 4fr 1fr;
   grid-template-rows: 10vh;
-  
   font-family: inherit;
   font-size: large;
 }
@@ -210,24 +290,40 @@ p{
 
 .right_bg {
   background-color: #ecf0f1;
+  margin-top: 0em;
 }
 /*certificates*/
-.certs > li 
+
+.certs
 {
-margin-left: 70px;
-width: 80%;
-padding-bottom: 6px;
+display: inline-grid;
+grid-template-rows: 1px 1px;
+grid-template-columns: 4fr 4fr;
+grid-gap: 50px;
+/* justify-items: center; */
+margin-left: 10px;
+/* width: 80%; */
 list-style-type: disc;
-text-align: left;
+background-color: #3498db;
+border: 30px solid #51a0d4;
 }
 
-.comp > li 
+.comp
 {
-margin-left: 70px;
-width: 80%;
-padding-bottom: 6px;
-list-style-type: disc;
-text-align: left;
+  display: inline-grid;
+  grid-template-rows: 10px 10px 10px;
+  grid-template-columns: 350px 150px 150px;
+  grid-gap: 60px;
+  /* justify-items:center; */
+  /* align-items: center; */
+  margin-top: 20px;
+  margin-left: 50px;
+  width: 80%;
+  /* padding-bottom: 10px; */
+  list-style-type: disc;
+  text-align: left;
+  background-color: #3498db;
+  border: 30px solid #51a0d4;
 }
 
 /* .Education img
@@ -254,6 +350,8 @@ text-align: left;
 .icon-interest {
   fill: currentColor;
   display: inline-block;
+  padding: 20px;
+  margin-left: 40px;
   font-size: inherit;
   height: 5em;
   overflow: visible;
@@ -272,17 +370,25 @@ img
 {
   display: flex;
   align-items: center;
-  opacity: 3;
- 
-  
+  opacity: 0.9;
+
+  display: inline-grid;
+  grid-template-rows: 1px 1px 1px;
+  grid-template-columns: 100px 100px 100px;
+  grid-gap: 50px;
+  justify-items: center;
+  margin-left: 5px;
 }
   
   @media only screen and (max-width : 768px) 
   {
-    main, .container, .box, .Education
+    main, .container, .box, .Education, .comp, .right_bg, .job, .job-title, .job-company, .job-title-container
     {
       grid-template-columns: 100%;
     }
 
-  
+    /* .job-date, .job-title
+    {
+      grid-template-columns: wrap;
+    } */
   }
